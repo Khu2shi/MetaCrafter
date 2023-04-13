@@ -1,0 +1,30 @@
+//SPDX-License-Identifier: MIT
+pragma solidity 0.8.7;
+
+contract Challenge
+{
+    uint num;
+    string str;
+    bool check;
+    int eth;
+    function set_val(uint _num,string memory _str,bool _check,int _eth) public
+    {
+        num=_num;
+        str=_str;
+        check=_check;
+        eth=_eth;
+    }
+    function get_num() public view returns(uint){
+        return num;
+    }
+    function get_str() public view returns(string memory){
+        return str;
+    }
+    function get_check() public view returns(bool){
+        return check;
+    }
+    function get_eth() public view returns(int){
+        return eth;
+    }
+}
+
